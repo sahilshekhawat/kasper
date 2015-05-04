@@ -11,5 +11,5 @@ domain_name: 'http://sahilshekhawat.me'
 google_analytics: 'UA-62563604-1'
 
 # Details for the RSS feed generator
-url:            'http://sahilshekhawat.me/'
+url:            'http://sahilshekhawat.github.io'
 author:         'Sahil Shekhawat'
