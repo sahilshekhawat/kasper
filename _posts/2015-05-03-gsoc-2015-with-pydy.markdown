@@ -5,10 +5,12 @@ date:   2015-05-03 19:00:00
 categories: SahilShekhawat PyDy GSoC
 ---
 
-Finally, I got selected into Google Summer of Code!. I'll be working to create an interactive system generator for [Pydy](http://pydy.org) which is participating under Python Software Foundation. 
+![GSoC 2015]({{ site.url }}/assets/images/gsoc15.png)
 
-Pydy, short of Python Dynamics, is a toolkit written in Python that utilizes many scientific programs to study MultiBody systems. 
+Finally, I got selected into Google Summer of Code!. I applied last year too but was rejected and I am involved in SymPy since then. I have four mentors namely [Jason Moore](https://github.com/moorepants), [Jim Christ](https://github.com/jcrist), [Tarun Gaba](https://github.com/tarzzz) and [Gilbert Gede](https://github.com/gilbertgede). I'll be working to create an interactive system generator for [Pydy](http://pydy.org) which is participating under Python Software Foundation. 
 
-My project is to create a web based GUI which adds an abstraction layer over PyDy and lets its users create MultiBody systems interactively. My initial plans can be found [here](https://github.com/pydy/pydy/wiki/GSOC-2015-Application%3A-Sahil-Shekhawat-(Interactive-Generation-of-a-System)) and my weekly progress and updates will be posted here as blog posts.
+Pydy, short of Python Dynamics, is a toolkit written in Python that utilizes many scientific programs to study MultiBody systems. Presently, it has its own visualization but that does not provide an abstraction layer, ie. you have to write python code to visualize. You have to code your system on your own and thus, you can only use PyDy if you know about SymPy and PyDy. 
+
+My project is to create a web based GUI which adds an abstraction layer over PyDy and lets its users create MultiBody systems interactively. This will increase the user base of PyDy. My initial plans can be found [here](https://github.com/pydy/pydy/wiki/GSOC-2015-Application%3A-Sahil-Shekhawat-(Interactive-Generation-of-a-System)) and my weekly progress and updates will be posted here as blog posts.
 
 This is a big project and I can't wait to get started.
