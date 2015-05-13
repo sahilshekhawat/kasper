@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Outline of my GSoC project"
-date:   2015-05-07 11:06:00
-categories: SahilShekhawat PyDy GSoC
----
-The goal of PyDy is to have a modular framework and eventually a physics abstraction layer which utilizes a variety of backends. This project will advance PyDy towards it by improving the abstraction layer and creating GUI tools for users. I am calling this module "PyDy-InGen". :)
-
