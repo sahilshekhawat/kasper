@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Build a blog with Jekyll and Github pages"
-date:   2015-05-04 18:02:00
+date:   "2015-05-04 18:02:00"
 categories: SahilShekhawat tech blog
 ---
 

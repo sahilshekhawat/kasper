@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Building Heroku inspired PaaS for our Data center"
-date:   2015-05-07 11:06:00
+date:   "2015-05-07 11:06:00"
 categories: SahilShekhawat PaaS Dies
 ---
 

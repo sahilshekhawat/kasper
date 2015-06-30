@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "GSoC 2015 with PyDy"
-date:   2015-05-03 19:00:00
+title: "GSoC 2015 with PyDy"
+date: "2015-05-03 19:00:00"
 categories: SahilShekhawat PyDy GSoC
 ---
 

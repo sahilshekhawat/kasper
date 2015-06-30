@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GSoC Project Implementational details"
-date:   2015-05-22 15:00:03
+date:   "2015-05-22 15:00:03"
 categories: SahilShekhawat PyDy GSoC
 ---
 

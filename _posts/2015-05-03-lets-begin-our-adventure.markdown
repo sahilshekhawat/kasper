@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Let's begin our adventure!"
-date:   2015-05-03 18:00:00
+date:   "2015-05-03 18:00:00"
 categories: SahilShekhawat Introduction
 ---
 

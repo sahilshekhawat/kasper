@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "GSoC Week #1 Update #1"
-date:   2015-05-26 03:16:21
+title:  "GSoC Week 1"
+date:   "2015-05-26 03:16:21"
 categories: SahilShekhawat PyDy GSoC
 ---
 
