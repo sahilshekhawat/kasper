@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "GSoC Week #3 Update #1"
+date:   2015-06-11 01:14:03
+categories: SahilShekhawat PyDy GSoC
+---
+Accomplishements
+----------------
+**1. Finished a working prototype of the API:**
+Developed [working API prototype](https://www.google.com/url?q=https%3A%2F%2Fgithub.com%2Fsahilshekhawat%2Fpydy%2Ftree%2Finteractive_generation_of_system_gsoc_15&sa=D&sntz=1&usg=AFQjCNErrlxZK8bCDMK1NU48XCqYBQNrHQ) and discussed with the community. It generates Eqations of motion for a simple pendulum example.
+
+**2. Finished API design after discussing with mentors:**
+Discussed the prototype with mentors, key points are:
+
+1. Prototype a new RigidBody class that is seperate from sympy.physics.mechanics.RigidBody. Once we see what your class needs to do we can decide it it should be integrated more closely to the existing RigidBody.
+2. Modify or extend System to work for your new module.
+3. Come up with a new name for the module.
+4. New classes for Joints, Forces, etc.
+5. Make sure decoration methods utilize VisualizationFrame, don't create something new. In fact, VisualizationFrame is a lot like what you wnat your new RigidBody class to be. Maybe that is the class that needs to be extended to build RigidBody.
+
+**3. Worked on several issues for the upcoming 0.3.0 release:**
+We have a release coming on Jun, 15 and I fixed many issues mainly related to visualization.
+
+
+
+Further Plans
+--------------
+**1. Will finish remaining issues for the release:**
+There are a bunch of issues remaining, I will work to fix them and get master ready for the release.
+
+**2. Write unit tests for the API:**
+As mentioned earlier, I have a clear plan for the API and we all agree that writing unit tests will give a much details and clear picture of the design and then we can discuss more about the possible issues. So, I will raise several PRs which will be class based ie. a PR for the unit tests of the functinalities of a class.
+

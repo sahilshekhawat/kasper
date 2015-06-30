@@ -1,0 +1,40 @@
+---
+layout: post
+title:  "GSoC Week #2 Update #1"
+date:   2015-06-02 16:28:03
+categories: SahilShekhawat PyDy GSoC
+---
+Hi There!
+Its been an entire week and a lot has happened between it. In Week 1, I was supposed to work on the interface and help with the PyDy's 0.3.0 release due on 15 June. I fixed most of the bugs in the visualizer, be it in IPython notebook or the normal one. Most of the main issues in the milestone are now fixed. It was very interesting to work with the visualizer. With my past experience in Three.js it was very easy and just required time. 
+
+I have to say that it took me way over 40 hours last week to work on the things that I have. My main challenge was to come up with the API design, I don't have much experience with Physics and thus, I was struggling most of the time. Jason and Jim helped me a lot in the last meeting but still I was struggling. 
+
+I read though many texts, worked on many examples and now I am quite confident in creating systems using pydy's current interface which will help me a lot BUT everything is not good, I have a some bad news as well, I had to completely finish that API design and its implementational details but was unable to do so. I tried my best but still couldn't. The main thing that is left is how will I provide functionalities to set  velocities or positions while using joints. Joints will support likages but there is no text which explains how that is achievable. Although, I have a vague idea that I can provide an option of custom joints and user can use some constraints (holonomic or non-holonomic) but I don't know yet, how it will work on the numeric side.
+
+As a result, I decided to move ahead and try to first implement API which will support kinematic chains. I have a clear view of how that will work and this week its my aim to finish up on  that. Initially I decided that I will work on Body class this week but I no longer wants to do that. I want to create a bare minimum API which will included everything and in coming weeks I can improve on each of its parts. 
+
+Before mid-term evaluation, my aim is to create API  with completely implemented bodies, joints and constraints which at the very least support linkages. Since, just 3 weeks are remaining for the mid-term evaluation this is a lot of work.
+
+Pydy currently have a visualizer and I thought, why not integrate it with the API? and now I have a class Visualizer 
+and I am implementing a basic spring damper example with a bare minimum but with all correctly implemented components of the API. It will be as follows:
+
+{% highlight python %}
+from pydy.ingen import *
+from sympy import symbols
+
+system = MultiBodySystem()
+particle = Particle()
+# Can directly link to pydy-viz using decorators
+particle.addDecoration( Sphere(0.1) );
+# Added pin joint between ground and particle
+particleJoint = Pin( system.ground,  particle )
+# creats a Spring of length c with spring constant k
+particle.applyForce( SpringForce( system.ground.x ) )
+# initialize visualization
+viz = Visualize( system )
+
+# Other details for passing initial conditions and 	other animation
+# related things will be added soon 
+{% endhighlight %}
+
+Cheers,

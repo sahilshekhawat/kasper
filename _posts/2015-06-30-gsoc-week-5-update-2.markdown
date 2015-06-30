@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "GSoC Week #5 Update #2"
+date:   2015-06-30 21:37:52
+categories: SahilShekhawat PyDy GSoC
+---
+
+I raised many PRs including unit tests for various parts of the API which include one giant PR including everything and atomic PRs for every single components. The main challenge was to balance between symbolic and numeric part of the API.
+
+When we first started, we had a good example of Simbody and we did took some inspiration from it but it differs greatly from our approach. PyDy started as a package from sympy.physics and thus, went on to add numeric parts to the symbolic base provided by sympy and now we face the similar challenge. Jason gave an idea that we can also implement a JointsMethod in sympy.physics.mechanics which will take joints and bodies as its paramters and use other methods like Kane's Method already implemented in Sympy to generate equations of motion. Its advantage is that it will separate the symbolic part from numeric part.
+
+But right now there are some problems which needs to be fixed if we decided to go that way. 
+
+1. Firslty, we want to visualize various components of a system in pydy.viz which cannot be done in sympy and thus, must be done in pydy.system when most of the underlying calculation are done in JointsMethod in sympy.physics.mechanics.
+2. Secondly, there is a problem of assigning some default value or initial condition to the constants and dynamic symbols in pydy.system as they will be defined in JointsMethod. How will a user know which symbols are there and if we want to handle it ourselves then again we need to know which defualt value suits the best.
+
+Apart from these issues, we were able to reach some concrete decisions which includes:
+
+1. Structure of a Body class.
+2. Need for a Force class.
+
+Most of my time is going in reading and working with various sudo designs to decide various functions. This is a crucial point and we need to list down a perfect design. After this, the only thing left will be implemented the API and development speed will increase manifolds. Right now I am working on system's design and Jason's awesome suggestions on Force's class design.
+
+Thanks
