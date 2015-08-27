@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "GSoC Week 7"
+date:   "2015-07-07 20:59:26"
+categories: SahilShekhawat PyDy GSoC
+---
+
+I have been working according to my new timeline. I have finished writing unit tests for bodies and all specific joints (PinJoint, SlidingJoint, CylindricalJoint, SphericalJoint and PlanarJoint). Writing unit tests gave me a confidence and helped us to discuss the design. It would have taken a lot more time if we would have implemented them first. Have not pushed PlanarJoint and SphericalJoints yet, I have to change somethings so that they can work without body class. Right now Body is passed to Joint's but Joints will be implemented in Sympy and we cannot have a Body class there. Thus, I have to change RigidBody and Particle classes in Sympy to include Bodies functionalities. I will discuss this further with my mentors.
+
+I am currently working in designing a JointMethod class and writing unit tests for them. It will take RigidBodies, Particles and Joints as input and will generate equations of motion using Kane's method. It is not generating EoM on its own, rather it provides an interface for generating EoMs using joints.
+
+After finishing this, later this week I will start the core implementation. Joints and JointsMethod will be implemented in Sympy along with changes in RigidBody and Particle. As I have been looking for the implementational details as well, I feel that would be easy. The main thing is to get the unit tests right.
+
+Thanks

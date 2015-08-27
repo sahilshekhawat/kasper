@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "GSoC Week 9"
+date:   "2015-07-23 21:59:26"
+categories: SahilShekhawat PyDy GSoC
+---
+
+Last week was very sad, I am behind my timeline because I had to travel to Bangalore (around 3000 km) for 3 days. I had to finish pinjoint, slidingjoint and cylindricaljoint by this week but I was only able to develop prototypes for pin and sliding joint. I was not able to implement them.
+
+Now, according to my timelineI have to finish all joints implementation by this week. I am trying my best to accomplish that but by considering the fact that the Joints will require fixing bugs, it might take more time but I am trying to go forward and try to finish that.
+
+The reason is that if I am able to get back on track, I will be able to implement all the things in my timeline and I don't have much space in timeline to move everything. I don't want to take time assigned for fixing of bugs and writing docs/examples. They are a crucial part.
+
+So, I am going to go ahead and try to finish off all joints by this week. Right now, I have working examples for pinjoint and sliding joints and after a meeting with Jason, we decided that its good to implement those examples and use them as unit tests. So, I have to:
+
+1. Write working examples using current API showing joints.
+2. Write joints implementation which will generate same EoMs as the examples.
+
+I know its hard but I messed up the timeline and I have to fix it.

@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "GSoC Week 10"
+date:   "2015-07-28 23:25:01"
+categories: SahilShekhawat PyDy GSoC
+---
+
+Hi everyone, my last post was made at a very bad position. I had lost 3 days of work and was lagging behind my timeline. I was in a very bad mood than I am now. Now, I feel confident with this project because I am finally getting the hand of dynamics (the only issue).
+
+As you guys can see it clearly, We fixed it. Jason and Tarun helped me get back on track and instead of just working my ass off, they understood and asked me to adjust my timeline instead. Although, this, in no way means that I will not put back the hours I lost. My updated timeline can be found at:https://github.com/pydy/pydy/wiki/GSoC-2015:-InGen-Module-Timeline
+
+I made some good progress since then. I have worked out the dynamics of three of the five joints that I want to implement i.e PinJoint, SlidingJoint and CylindricalJoint. I have also created three examples for each of them with complete visualization. Visualization has helped me a lot. Though it takes time but on the other hand it clearly shows me what mistakes in the dynamics I am making. I agree that I don't have expertise in dynamics but thats alright now. Also, as an extra advantage I can see the functions which I will need in Body and Joints for the visulization part too ;) but first things first! I have to finish off symbolic part and test it extensively.
+
+At this point, I have achieved my this week's target as per my timeline. Now in the coming week I will finish off remaing two joints and unit tests of all joints. There will be examples to tests individual joints and one system which includes all joints together. Jason actually took time out of his busy schedule to help me get back on track. :)
+
+So, in other words, at the end of this week. I will have all joints working with unit tests and examples. Also, i will try to finish of atleast some significant part of JointsMethod since after the examples its pretty much clear what functions it will play. If all goes as plan, I will have most of the symbolic part ready by this week. This point is ideal to get some feedback on the design too. I am really looking forward for the reviews of other team members.
+
+Also, I have to mention that I have been terrible in communicating with my mentors and have tried to fix that. Will improve on this week as well.

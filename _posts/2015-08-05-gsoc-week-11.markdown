@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "GSoC Week 11"
+date:   "2015-08-05 23:28:43"
+categories: SahilShekhawat PyDy GSoC
+---
+
+Hi everyone! this week was very productive. I learned a lot and finished many things. My vacations are now over and have to go to college but I am able to work around 6 hours on week days and cover up the time on weekends (Wednesday is off too).
+
+As per the timeline, I finished off all the Joints. Also, I wrote sample JointsMethod which can be passed to pydy.System like KanesMethod. Reviewing will take a lot of time and now, I think, I should raise PRs and ask for feedback from everyone in the community. Jason and Tarun have helped me a lot and have reviwed most of the work.
+
+One particular thing that I want to point out is updating individual PRs. I have raised individual PRs for each part of the project, namely: Body, Joint, JointsMethod and Examples but I couldn't work on them since I need to access their code simulataneous even if I want to test something. So, I merged all of them and created a single PRs. It made working very easy but now updating those individual PRs is a pain.
+
+I will raise the PRs now and will be updating things according to the feedback while discussing it with others. Also, I will be working on the numeric part too. User should be able to set values of constants and other variables. For that, I think that we can mention all the constants and variables in a class in docs. Giving user option to set their values and of choosing a smart way for defaults.
+
+Thank you.

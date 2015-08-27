@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "GSoC Week 8"
+date:   "2015-07-14 22:11:23"
+categories: SahilShekhawat PyDy GSoC
+---
+I finished unit tests for all the parts, i.e. Joints class and all specific joints, JointsMethod and Body class. I still have to push one last update to them. Now, I will start implementing because I feel that real implementation will bring out many things which just unit tests can't and I will be able to implement more detailed unit tests using that implementation since at this time at best I can test interface, functions and some general tasks but implementation dependent things will be be easy to finish after the implementation.
+
+I have started working on Body class since it is not dependant on other classes. Then I will implement Joints class and all specific Joints i.e. PinJoint, SlidingJoint, CylindricalJoint, SphericalJoint and PlanarJoint. (I am sorry but I mention them again and again for someone who is new) and lastly I will implement JointsMethod. All of this will be symbolic and will go into SymPy. I want to finish this symbolic part first and them we will discuss and finish numeric part as per my timeline.
+
+Thanks for listening.

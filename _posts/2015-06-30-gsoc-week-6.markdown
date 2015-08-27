@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "GSoC Week 6"
+date: "2015-06-30 03:57:02"
+categories: SahilShekhawat PyDy GSoC
+---
+
+After numerous discussions and iterating we have a better understanding of the problem that we want to solve. Dynamics is a challenge for me that hold me back more times than few. So, after our last meeting we decided to redefine the timeline and this blog post is all about that.
+
+
+Redefining Timeline
+-------------------
+**Week 6 (30th June - 6 July): Unit tests for Joints and Body**
+
+Unit Tests for Joint Classes including specific Joint's implementation. It includes a Joint Base class along with five specific joints i.e. Pin Joint, Prismatic Joint, Cylindric Joint, Spherical Joint and Planar Joint. A lot of time will be required to finalise the structure and implementation and as all of the five joints differ in the way they works, I have taken a week to do this.
+
+**Week 8 (7 July - 13 July): Unit tests for Joint's Method and implementation starts**
+
+Firstly we want to get the symbolic part done. So, I will finish off JointMethod's unit tests in first 3 days. At this point we will have all the unit tests for all necessary classes i.e. Body, JointMethod, all joints etc. After this, implementation of module will begin. I will start with implementing body class. I don't think it will take much time but just taking it as a buffer period for any changes in the API. If there are no changes in API and Body is implemented, I will start implementing specific joints classes.
+
+**Week 9 (14 July - 20 July):**
+
+This entire week, I will implement PinJoint, PrismaticJoint and CylindricJoint. All of them are related and have similar implementation. It will take time to implement specific joints correctly. Thus, I want to go fix bugs along with the implementation. 
+
+**Week 10 (21 July - 27 July):**
+
+All the remaining Joint's classes will be finished i.e. ScrewJoint and PlanarJoint along with the Base Joint's class. Again testing and fixing bug will take time and I want to take an entire week.
+
+**Week 11 (28 July - 3 August)**
+
+More Joint's classes might be introduced during the course of 4 week. All of them will be implemented in the beginning of this week. If plan does not changes, then I will start off implementing JointMethod class. It will take an entire week to implement. After this we will have a pure symbolic background
+
+**Week 12 (4 August - 10 August)**
+
+At this point, all the symbolic changes will be implemented and everything will be working. Now the second phase will begin to change pydy.system class for support:
+
+1. Assigning numeric values to the symbols, either from user or some default.
+2. Adding visualization to the bodies.
+
+This is a part which need to be discussed more but assigning numeric values is a necessity and I will start changing system's class and introduce more classes to help user provide numeric values.
+
+**Week 13 (11 August - 17 August)**
+
+I will try to create class to assign default value. This is a part which need to be discussed and may change but the main idea will be the same. Working on assinging numeric values to the symbols.
+Will update when more details have been discussed.
+
+**Week 14 (17 August - 24 August)**
+
+This is the official buffer period after pen down. No new code can be written in this week. I will mainly be fixing bugs, correcting docstrings and writing more unit tests.
